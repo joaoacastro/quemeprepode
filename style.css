@@ -1,14 +1,8 @@
 *{
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
-    margin: 0;
-    padding: 0;
 }
-body{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 280px;
-}
+
 .subTitulo,
 .titulo{
     font-variant: small-caps;
