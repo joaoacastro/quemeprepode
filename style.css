@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 280px;
+}
+.subTitulo,
+.titulo{
+    font-variant: small-caps;
+}
+
+.subTitulo{
+    margin-bottom: 2em;
+}
+.questionario{
+    margin-top: 2em;
+}
+.paragraphExplicacao{
+    text-align: justify; /*deixar texto justificado*/
+    margin-bottom: 2em;
+}
+.paragraphResult{
+    margin-top: 2em;
+}
+.quero,
+.mereco,
+.preciso,
+.posso,
+.devo{
+    margin-bottom: 2em;
+}

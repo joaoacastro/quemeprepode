@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <h1 class="titulo"><span>&#187;</span>Bem Vindo Ao Teste "QueMePrePoDe"<span>&#171;</span></h1>
+    <h2 class="subTitulo">Aqui você vai economizar seu dinheiro.</h2>
+    <div class="paragraphExplicacao">
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;Coisa boa é comprar! Não estou falando de comprar remédio nem talão de faixa azul, é claro. Mas como é bom comprar aquela calça nova, um CD do seu cantor predileto, um livro interessante, e tantas outras coisas.
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Haveria algo errado em todo esse prazer de comprar? Seria puro consumismo? Afinal de contas, que mal pode haver em sentir prazer no ato de comprar? Mal nenhum, muito pelo contrário. Comprar, como tudo na vida, pode e deve ser divertido e prazeroso. Mas para que seja assim, você deve tomar alguns cuidados básicos, evitando meter os pés pelas mãos. Tem gente que faz bobagem na hora da compra, e daí a alegria acaba rapidinho. Para evitar que suas experiências de compras sejam traumáticas, faça sempre as “Cinco Perguntas do Comprador Esperto”: Eu quero? Eu mereço? Eu preciso? Eu posso? Eu devo?
+        </p>
+    </div>
+    <div class="paragraphQuest">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Vamos ao questionário ;)</p>
+        <p>(obs.: Escolha o número 1 para sim ou número 0 para não.)</p>
+    </div>
+    <form class="questionario">
+
+        <div class="quero">
+            <p>1. Você realmente quer isto?</p>
+            <input type="number" id="numberQuero" name="numberQuero" min="0" max="1">
+
+        </div>
+
+        <div class="mereco">
+            <p>2. Você realmente merece isto?</p>
+            <input type="number" id="numberMereco" name="numberMereco" min="0" max="1">
+
+        </div>
+
+        <div class="preciso">
+            <p>3. Você realmente precisa disto?</p>
+            <input type="number" id="numberPreciso" name="numberPreciso" min="0" max="1">
+
+        </div>
+
+        <div class="posso">
+            <p>4. Você realmente pode ter isto?</p>
+            <input type="number" id="numberPosso" name="numberPosso" min="0" max="1">
+        </div>
+
+        <div class="devo">
+            <p>5. Você realmente deve ter isto?</p>
+            <input type="number" id="numberDevo" name="numberDevo" min="0" max="1">
+        </div>
+        <br>
+
+        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="Reset" value="Apagar">
+    </form>
+    <div class="paragraphResult">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Resultado:</p>
+        <br>
+        <p id=paragraphResult></p>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
