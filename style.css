@@ -17,9 +17,12 @@
 .paragraphExplicacao{
     text-align: justify; /*deixar texto justificado*/
     margin-bottom: 2em;
+    text-indent: 3em;
 }
 .paragraphResult{
-    margin-top: 2em;
+    margin-top: 10px;
+    text-indent: 3em; /*espaçamento inicial*/
+    font-style: italic;
 }
 .quero,
 .mereco,
