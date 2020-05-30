@@ -1,15 +1,13 @@
+function calcular(){
+    var inputQuero = document.querySelector(".inputQuero:checked").value;
+    var inputMereco = document.querySelector(".inputQuero:checked").value;
+    var inputPreciso = document.querySelector(".inputQuero:checked").value;
+    var inputPosso = document.querySelector(".inputQuero:checked").value;
+    var inputDevo = document.querySelector(".inputQuero:checked").value;
 
-function calcular(resultado){
-    
-    var resultado = document.getElementById("numberQuero").value;
-    var resultado2 = document.getElementById("numberMereco").value;
-    var resultado3 = document.getElementById("numberPreciso").value;
-    var resultado4 = document.getElementById("numberPosso").value;
-    var resultado5 = document.getElementById("numberDevo").value;
-
-    if (resultado == 1 && resultado2 == 1 && resultado3 == 1 && resultado4 == 1 && resultado5 == 1){
-        paragraphResult.innerHTML = "Compre!"
+    if (inputQuero == "Sim" && inputMereco == "Sim" && inputPreciso == "Sim" && inputPosso == "Sim" && inputDevo == "Sim"){
+        paragraphResult.innerHTML = "Baseado nas suas respostas, você pode comprar este ítem que tanto deseja."
     } else {
-        paragraphResult.innerHTML = "Não Compre!"
+        paragraphResult.innerHTML = "Baseado nas suas respostas, parece que este ítem não é tão necessário, vá dar uma volta que já já a vontade de comprar passa."
     }
 }
