@@ -1,22 +1,20 @@
 *{
     box-sizing: border-box;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 }
-
+body{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .subTitulo,
 .titulo{
     font-variant: small-caps;
+    font-family: 'Indie Flower', cursive;
 }
 
-.subTitulo{
-    margin-bottom: 2em;
-}
-.questionario{
-    margin-top: 2em;
-}
 .paragraphExplicacao{
     text-align: justify; /*deixar texto justificado*/
-    margin-bottom: 2em;
     text-indent: 3em;
 }
 .paragraphResult{
@@ -24,10 +22,16 @@
     text-indent: 3em; /*espaçamento inicial*/
     font-style: italic;
 }
-.quero,
-.mereco,
-.preciso,
-.posso,
-.devo{
-    margin-bottom: 2em;
+.questionario{
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+}
+input{
+    border-radius: 20px;
+}
+input:hover{
+    background-color: yellow;
+    cursor: pointer;
 }
