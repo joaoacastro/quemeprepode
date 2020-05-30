@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!--fonte titulo e sub titulo-->
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet"> <!--fonte padrão site-->
 </head>
 <body>
     <h1 class="titulo"><span>&#187;</span>Bem Vindo Ao Teste "QueMePrePoDe"<span>&#171;</span></h1>
     <h2 class="subTitulo">Aqui você vai economizar seu dinheiro.</h2>
+
     <div class="paragraphExplicacao">
         <p>
-        Coisa boa é comprar! Não estou falando de comprar remédio nem talão de faixa azul, é claro. Mas como é bom comprar aquela calça nova, um CD do seu cantor predileto, um livro interessante, e tantas outras coisas.
+            Comprar é muito bom, e quando digo comprar não estou falando em comprar remédio nem nada do tipo, digo comprar algo para nós, como aquela roupa nova, aquele produto eletrônico de última geração ou até mesmo um filme em um serviço de streaming.
         </p>
         <p>
-        Haveria algo errado em todo esse prazer de comprar? Seria puro consumismo? Afinal de contas, que mal pode haver em sentir prazer no ato de comprar? Mal nenhum, muito pelo contrário. Comprar, como tudo na vida, pode e deve ser divertido e prazeroso. Mas para que seja assim, você deve tomar alguns cuidados básicos, evitando meter os pés pelas mãos. Tem gente que faz bobagem na hora da compra, e daí a alegria acaba rapidinho. Para evitar que suas experiências de compras sejam traumáticas, faça sempre as “Cinco Perguntas do Comprador Esperto”: Eu quero? Eu mereço? Eu preciso? Eu posso? Eu devo?
+            Até ai Ok, ou será que tem algo errado nisso? Será que seria somente consumismo? Afinal de tanto batalharmos merecemos nos presentear de alguma forma. E estamos mais do que certo em pensarmos assim, porém para que não ocorra problemas financeiros posteriores devemos tomar alguns cuidados. Antes de qualquer compra faça sempre as “Cinco Perguntas do Comprador Esperto”: Eu quero? Eu mereço? Eu preciso? Eu posso? Eu devo?
         </p>
-        <p>Vamos ao questionário baseado naquilo que você deseja adquirir. ;)</p>
+        <p>
+            Vamos ao questionário baseado naquilo que você deseja adquirir. ;)
+        </p>
     </div>
+
     <form class="questionario">
 
         <div class="quero">
-            <p>1. Você realmente quer isto?</p>
-
+            <p>1. Você realmente quer isto? <i>Para saber se realmente queremos, pensaremos da seguinte forma. Vamos fazer uma lista mental de três outras coisas também "irresistíveis" que você poderia comprar com o mesmo valor, ou seja, outras coisas que você também "quer" muito. Se não vier nada em mente sua resposta é sim.</i></p>
             <input type="radio" name="radioQuero" class="inputQuero" value="Sim">
             <label for="sim">Sim</label>
 
@@ -33,7 +37,7 @@
         </div>
 
         <label class="mereco">
-            <p>2. Você realmente merece isto?</p>           
+            <p>2. Você realmente merece isto? <i>Esta é uma questão um pouco mais complicada, visto que com base no nosso esforço nós merecemos sim, ou chegamos naquela frase: "Só se vive uma vez", mas vamos com calma, mas te proponho um desafio, antes de comprar algo faça um desafio a si mesmo e estabeleça este desafio como meta, se alcançada dai você se parabeniza com isto que deseja comprar. </i></p>
             <input type="radio" name="radioMereco" class="inputMereco" value="Sim">
             <label for="sim">Sim</label>
 
@@ -42,18 +46,16 @@
         </label>
 
         <label class="preciso">
-            <p>3. Você realmente precisa disto?</p>
-
-            <input type="radio" name="radioPreciso" class="inputPreciso" value="Sim">
+            <p>3. Você realmente precisa disto? <i>Como diria a propaganda de um conhecido cartão de crédito: "Precisar, não precisa..." E muitas vezes não precisa mesmo! Mas se precisar mesmo comprar, então compre! Só não se esqueça de que 90% do que a gente compra e não usa  no período dos próximos trinta dias após a compra, acaba indo direto para o lixo.</i></p>
+            <input type="radio" name="radioPreciso" class="inputPreciso" value="Sim" required>
             <label for="sim">Sim</label>
 
-            <input type="radio" name="radioPreciso" class="inputPreciso" value="Não">
+            <input type="radio" name="radioPreciso" class="inputPreciso" value="Não" required>
             <label for="nao">Não</label>
         </label>
 
         <label class="posso">
-            <p>4. Você realmente pode ter isto?</p>
-
+            <p>4. Você realmente pode ter isto? <i>Essa não é uma pergunta tão fácil, se você já ganhou o dinheiro que vai gastar na compra, pode comprar, pode gastar sem dó. Só não está valendo gastar o que você ainda não ganhou, tática muito popular e vulgarmente conhecida como "atolar-se nas dívidas".</i></p>
             <input type="radio" name="radioPosso" class="inputPosso" value="Sim">
             <label for="sim">Sim</label>
 
@@ -61,8 +63,7 @@
             <label for="nao">Não</label>
 
         <label class="devo">
-            <p>5. Você realmente deve ter isto?</p>
-            
+            <p>5. Você realmente deve ter isto? <i>Bom eu não posso dizer o que você deve ter ou não, você quem sabe, mas quem compra gasta, quem gasta, não poupa, quem não poupa, não investe, e quem não investe, não tem futuro financeiramente falando.  </i></p>
             <input type="radio" name="radioDevo" class="inputDevo" value="Sim">
             <label for="sim">Sim</label>
 
@@ -71,14 +72,15 @@
         </label>
         <br>
         <br>
+        
+        <div class="paragraphResult">
+            <div id=paragraphResult>Resultado:</div>
+        </div>
 
-    <input type="button" value="Enviar" onclick="calcular()">
+        <input type="button" value="Enviar" onclick="calcular()">
         <input type="Reset" value="Apagar">
     </form>
     <br>
-    <div class="paragraphResult">
-        <div id=paragraphResult>Resultado:</div>
-    </div>
     
     <script src="script.js"></script>
 </body>
