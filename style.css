@@ -1,5 +1,4 @@
 *{
-
     font-family: 'Hammersmith One', sans-serif;
 }
 body{
@@ -19,7 +18,6 @@ body{
     background-color: rgba(255, 255, 255, 0.89);
     border-radius: 10px;
     /*border-color: #f00 #0f0 #00f #fc0; /* cores: topo, direita, inferior, esquerda */
-
 }
 
 .linhaSuperior{
@@ -55,6 +53,7 @@ body{
 .titulo{
     font-variant: small-caps;
     font-family: 'Indie Flower', cursive;
+    margin-top: 0;
 }
 
 .paragraphExplicacao{
