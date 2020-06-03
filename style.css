@@ -1,11 +1,55 @@
 *{
-    box-sizing: border-box;
+
     font-family: 'Hammersmith One', sans-serif;
 }
 body{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-image: url(https://miro.medium.com/max/6016/1*_ay9m83-TdXJ-t3-BEGRkA.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw 180vh;
+}
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.fundo{
+    width:100%;
+    height:71em;
+    /*border: 25px solid; /* As 4 bordas sólidas com 25px de espessura */
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 10px;
+    /*border-color: #f00 #0f0 #00f #fc0; /* cores: topo, direita, inferior, esquerda */
+
+}
+
+.linhaSuperior{
+    border-top: 2px solid rgb(138, 138, 138);
+    border-bottom: 1px dashed rgb(138, 138, 138);
+    border-left: none;
+    border-right: none;
+    color: rgb(114, 114, 114);
+    background-color: transparent;
+    height: 4px;
+}
+
+.linhaInferior{
+    border-top: 2px solid rgb(138, 138, 138);
+    border-bottom: 1px dashed rgb(138, 138, 138);
+    border-left: none;
+    border-right: none;
+    color: rgb(114, 114, 114);
+    background-color: transparent;
+    height: 4px;
+}
+
+.linhaParagraph{
+    border-top: 2px solid rgb(138, 138, 138);
+    border-bottom: 1px dashed rgb(138, 138, 138);
+    border-left: none;
+    border-right: none;
+    color: rgb(114, 114, 114);
+    background-color: transparent;
+    height: 4px;
 }
 .subTitulo,
 .titulo{
@@ -19,9 +63,10 @@ body{
 }
 .paragraphResult{
     margin-top: 10px;
-    text-indent: 3em; /*espaçamento inicial*/
+    /*text-indent: 3em;*/ /*espaçamento inicial*/
     font-style: italic;
 }
+
 .questionario{
     align-items: center;
     display: grid;
