@@ -25,75 +25,90 @@
                     Até ai Ok, ou será que tem algo errado nisso? Será que seria somente consumismo? Afinal de tanto batalharmos merecemos nos presentear de alguma forma. E estamos mais do que certo em pensarmos assim, porém para que não ocorra problemas financeiros posteriores devemos tomar alguns cuidados. Antes de qualquer compra faça sempre as “Cinco Perguntas do Comprador Esperto”: Eu quero? Eu mereço? Eu preciso? Eu posso? Eu devo?
                 </p>
                 <p>
-                    Vamos ao questionário baseado naquilo que você deseja adquirir. Por favor responda as 5 questões. 😉
+                    Vamos ao questionário baseado naquilo que você deseja adquirir. Por favor clique abaixo <i>"Iniciar Teste"</i> e responda as próximas questões. 😉
                 </p>
             </div>
-        
-            <hr class="linhaInferior">    
+
+            <hr class="linhaInferior">
+
+            <input class="btn" type="button" value="Iniciar o teste" onClick="proximo('mq')">
+
             <form class="questionario">
-                <div class="quero">
+                <label id="mq" class="quero">
                     <p>1. Você realmente quer isto? <i>Para saber se realmente queremos, pensaremos da seguinte forma. Vamos fazer uma lista mental de três outras coisas também "irresistíveis" que você poderia comprar com o mesmo valor, ou seja, outras coisas que você também "quer" muito. Se não vier nada em mente sua resposta é sim.</i></p>
                     <input type="radio" name="radioQuero" class="inputQuero" value="Sim">
                     <label for="sim">Sim</label>
         
                     <input type="radio" name="radioQuero" class="inputQuero" value="Não">
                     <label for="nao">Não</label>
+                    <br>
+                    <br>
+                    <input class="btn" type="button" value="Próximo" onClick="proximo('mm')">
+                </label>
         
-                </div>
-        
-                <label class="mereco">
+
+                <label id="mm" class="mereco">
                     <p>2. Você realmente merece isto? <i>Esta é uma questão um pouco mais complicada, visto que com base no nosso esforço nós merecemos sim, ou chegamos naquela frase: "Só se vive uma vez", mas vamos com calma, mas te proponho um desafio, antes de comprar algo faça um desafio a si mesmo e estabeleça este desafio como meta, se alcançada dai você se parabeniza com isto que deseja comprar. </i></p>
                     <input type="radio" name="radioMereco" class="inputMereco" value="Sim">
                     <label for="sim">Sim</label>
         
                     <input type="radio" name="radioMereco" class="inputMereco" value="Não">
                     <label for="nao">Não</label>
+                    <br>
+                    <br>
+                    <input class="btn" type="button" value="Próximo" onClick="proximo('mp')">
                 </label>
         
-                <label class="preciso">
+                <label id="mp" class="preciso">
                     <p>3. Você realmente precisa disto? <i>Como diria a propaganda de um conhecido cartão de crédito: "Precisar, não precisa..." E muitas vezes não precisa mesmo! Mas se precisar mesmo comprar, então compre! Só não se esqueça de que 90% do que a gente compra e não usa  no período dos próximos trinta dias após a compra, acaba indo direto para o lixo.</i></p>
                     <input type="radio" name="radioPreciso" class="inputPreciso" value="Sim">
                     <label for="sim">Sim</label>
         
                     <input type="radio" name="radioPreciso" class="inputPreciso" value="Não">
                     <label for="nao">Não</label>
+                    <br>
+                    <br>
+                    <input class="btn" type="button" value="Próximo" onClick="proximo('mpo')">
                 </label>
         
-                <label class="posso">
+                <label id="mpo" class="posso">
                     <p>4. Você realmente pode ter isto? <i>Essa não é uma pergunta tão fácil, se você já ganhou o dinheiro que vai gastar na compra, pode comprar, pode gastar sem dó. Só não está valendo gastar o que você ainda não ganhou, tática muito popular e vulgarmente conhecida como "atolar-se nas dívidas".</i></p>
                     <input type="radio" name="radioPosso" class="inputPosso" value="Sim">
                     <label for="sim">Sim</label>
         
                     <input type="radio" name="radioPosso" class="inputPosso" value="Não">
                     <label for="nao">Não</label>
-        
-                <label class="devo">
+                    <br>
+                    <br>
+                    <input class="btn" type="button" value="Próximo" onClick="proximo('md')">
+                </label>
+
+                <label id="md" class="devo">
                     <p>5. Você realmente deve ter isto? <i>Bom eu não posso dizer o que você deve ter ou não, você quem sabe, mas quem compra gasta, quem gasta, não poupa, quem não poupa, não investe, e quem não investe, não tem futuro financeiramente falando.  </i></p>
                     <input type="radio" name="radioDevo" class="inputDevo" value="Sim">
                     <label for="sim">Sim</label>
         
                     <input type="radio" name="radioDevo" class="inputDevo" value="Não">
                     <label for="nao">Não</label>
+                    <br>
+                    <br>
+                    <input class="btn" type="button" value="Finalizar" onclick="proximo('final'); calcular()">
                 </label>
                 <br>
                 <br>
-                
-                <hr class="linhaParagraph">
-        
-                <div class="paragraphResult">
-                    <div id=paragraphResult>Resultado:</div>
+                <div id="final" class="final">
+                    <hr class="linhaParagraph">
+            
+                    <div class="paragraphResult">
+                        <div id=paragraphResult>Resultado:</div>
+                    </div>
+                    <br>
+                    <input class="btn" type="Reset" value="Apagar">
                 </div>
-        
-            <br>
-        
-                <input class="btn" type="button" value="Enviar" onclick="calcular()">
-                <input class="btn" type="Reset" value="Apagar">
             </form>
             <br>
         </div>
-
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
