@@ -1,3 +1,11 @@
+function proximo(id){
+    if (document.getElementById(id).style.display == 'block'){
+    /* document.getElementById(id).style.display = 'none'; */
+    } else {
+        document.getElementById(id).style.display = 'block';
+    }
+}
+
 function calcular(){
     let inputQuero = document.querySelector(".inputQuero:checked").value;
     let inputMereco = document.querySelector(".inputMereco:checked").value;
